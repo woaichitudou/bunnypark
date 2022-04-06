@@ -1,0 +1,39 @@
+.m-bunny-ship {
+  overflow: hidden;
+  padding: 0 rem(30);
+  padding-bottom: rem(80);
+  box-sizing: border-box;
+  background: url(res("rabbit/rabb-bg.png")) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  &-no-data {
+    width: 100%;
+    height: rem(148);
+    margin: rem(130) auto;
+    > span {
+      display: block;
+      font-size: rem(16);
+      line-height: rem(16);
+      text-align: center;
+      @include wzjb(#3256cd, #72f9fc);
+      font-weight: bold;
+      white-space: nowrap;
+      margin-top: rem(20);
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: rem(118);
+      height: rem(110);
+      background: url(res("fleet/nodata.png")) no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
+      margin: auto;
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

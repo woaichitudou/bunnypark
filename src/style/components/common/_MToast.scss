@@ -1,0 +1,19 @@
+.m-toast {
+  position: fixed;left: 50%;top: 50%;@include yd(-50%, -50%);padding: rem(20);
+  min-height: rem(140);min-width: rem(140);
+  background: rgba(1, 1, 26, 0.7);border-radius: rem(5);
+  display: flex;justify-content: center;align-items: center;flex-flow: column;
+  &:before {
+    content: '';width: rem(40);height: rem(40);display: block;
+    background: center/contain no-repeat;margin-bottom: rem(20);
+  }
+  p {
+    @include wzjb(#F2F0F5, #5F77FF);font-size: rem(16);
+  }
+  &-succ:before {
+    background-image: url($res + 'common/icon-success.png');
+  }
+  &-fail:before {
+    background-image: url($res + 'common/icon-fail.png');
+  }
+}

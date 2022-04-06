@@ -1,0 +1,118 @@
+.m-details {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 rem(30);
+  padding-bottom: rem(80);
+  box-sizing: border-box;
+  &-label {
+    width: rem(202);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: rem(17);
+    &-left {
+      width: rem(88);
+      height: rem(126);
+      border: 1px solid #716db7;
+      overflow: hidden;
+      > img {
+        display: block;
+        width: rem(48);
+        margin: auto;
+        margin-top: rem(8);
+      }
+      > span {
+        font-size: rem(16);
+        line-height: rem(18);
+        text-align: center;
+        display: block;
+        color: #a3a4fe;
+        margin-top: rem(6);
+      }
+      > label {
+        font-size: rem(10);
+        line-height: rem(14);
+        text-align: center;
+        display: block;
+        color: #9292ae;
+        margin-top: rem(6);
+        white-space: nowrap;
+      }
+    }
+    &-right {
+      width: rem(88);
+      height: rem(126);
+      border: 1px solid #716db7;
+      overflow: hidden;
+      > img {
+        display: block;
+        width: rem(48);
+        margin: auto;
+        margin-top: rem(8);
+      }
+      > span {
+        font-size: rem(16);
+        line-height: rem(18);
+        text-align: center;
+        display: block;
+        color: #a3a4fe;
+        margin-top: rem(6);
+      }
+      > label {
+        font-size: rem(10);
+        line-height: rem(14);
+        text-align: center;
+        display: block;
+        color: #9292ae;
+        margin-top: rem(6);
+      }
+    }
+    &-border {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 rem(2);
+      margin-top: rem(15);
+      > em {
+        width: 0;
+        height: 0;
+        border-left: rem(7) solid transparent;
+        border-right: rem(7) solid transparent;
+        border-top: rem(5) solid #716db7;
+        display: block;
+      }
+    }
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-top: rem(23);
+    padding: 0 rem(10);
+    &-box {
+      width: rem(134);
+      height: rem(200);
+      margin-bottom: rem(30);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+  }
+
+}
+
+.m-details-label-border::after {
+  width: rem(29);
+  height: rem(1);
+  background: #382f72;
+  display: block;
+  content: "";
+}
+
+.m-details-label-border::before {
+  width: rem(29);
+  height: rem(1);
+  background: #382f72;
+  display: block;
+  content: "";
+}

@@ -1,0 +1,24 @@
+.m-insufficient-modal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  > .title {
+    font-size: rem(20);
+    line-height: rem(24);
+    background-image: -webkit-linear-gradient(
+      top,
+      rgba(242, 240, 245, 1),
+      rgba(95, 119, 255, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: rem(24);
+  }
+  .tatol {
+    font-size: rem(14);
+    line-height: rem(24);
+    text-align: center;
+    color: #7c6db5;
+    margin-top: rem(25);
+  }
+}

@@ -1,0 +1,42 @@
+.m-buy-spaceship {
+  box-sizing: border-box;font-family: 'Gilroy';
+  overflow: hidden;
+  padding: 0 rem(30);
+  padding-bottom: rem(80);
+  box-sizing: border-box;
+  &-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-top: rem(37);
+    &-box {
+      width: rem(142);
+      height: rem(200);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-bottom: rem(15);
+    }
+  }
+  &-modal {
+    display: flex;flex-flow: column;align-items: center;
+    & > h2 {
+      @include wzjb(#F2F0F5, #5F77FF);font-size: rem(20);font-weight: 200;
+      text-align: center;margin: rem(30) rem(-30) rem(22);
+    }
+    & > em {
+      display: block;font-family: 'tt';font-weight: 200;
+      @include wzjb(#F2FF5A, #FFB14D);font-size: rem(20);
+      margin: rem(23) 0 rem(28);
+      small {
+        font-size: rem(14);
+      }
+    }
+    & > p {
+      font-size: rem(12);color: #7C6DB5;
+      span {
+        @include wzjb(#F2F0F5, #5F77FF);font-family: 'tt';font-weight: 200;
+      }
+    }
+  }
+}

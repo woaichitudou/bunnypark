@@ -1,0 +1,39 @@
+.web-bunny-ship {
+  width: 970px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+  &-no-data {
+    width: 312px;
+    margin: auto;
+    margin-top: 120px;
+    > span {
+      display: block;
+      font-size: 23px;
+      line-height: 23px;
+      text-align: center;
+      @include wzjb(#3256cd, #72f9fc);
+      font-weight: bold;
+      white-space: nowrap;
+      margin-top: 53px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: 312px;
+      height: 295.23px;
+      background: url(res("fleet/nodata.png")) no-repeat;
+      background-size: 100% 100%;
+      background-position: 0 0;
+      margin: auto;
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

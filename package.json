@@ -1,0 +1,91 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "set PORT=5600 && react-app-rewired start",
+    "start:win": "set PORT=5600 && react-app-rewired start",
+    "start:mac": "PORT=5600 react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "_eject": "react-scripts eject",
+    "style": "node ./src/style/build.js",
+    "watch": "node ./src/style/watch.js"
+  },
+  "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@types/numeral": "^2.0.2",
+    "@types/react-redux": "^7.1.19",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/walletconnect-connector": "6.2.4",
+    "bignumber.js": "^9.0.1",
+    "classnames": "^2.3.1",
+    "dayjs": "^1.10.7",
+    "ethers": "^5.4.7",
+    "i18next": "^21.2.4",
+    "light-toast": "^0.3.5",
+    "numeral": "^2.0.6",
+    "qs": "^6.10.1",
+    "querystringify": "^2.2.0",
+    "react": "^17.0.2",
+    "react-cool-onclickoutside": "^1.7.0",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.8.15",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-scrolllock": "^5.0.1",
+    "react-use": "^17.3.1",
+    "store": "^2.0.12",
+    "svgaplayerweb": "^2.3.2",
+    "swiper": "^6.5.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/lodash": "^4.14.173",
+    "@types/node": "^15.0.3",
+    "@types/qs": "^6.9.7",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/webpack-env": "^1.16.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@web3-react/walletconnect-connector": "^6.2.6",
+    "customize-cra": "^1.0.0",
+    "dayjs": "^1.10.7",
+    "eslint": "^7.16.0",
+    "eslint-config-standard-with-typescript": "^19.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-standard": "^4.1.0",
+    "react-app-rewired": "^2.1.8",
+    "sass": "^1.32.13"
+  }
+}

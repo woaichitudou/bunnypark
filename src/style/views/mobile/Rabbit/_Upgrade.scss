@@ -1,0 +1,40 @@
+.m-rabbit-upgrade {
+  position: relative;
+  background: url(res('home-bg.jpg'));
+  background-size: 100% 100%;
+  padding-bottom: rem(71);
+  &::before{
+    content: '';
+    display:table;
+  }
+  >p.desc {
+    width: rem(375);
+    padding: 0 rem(20);
+    margin-top: rem(13);
+    color: #7C6DB5;
+    font-size: rem(14);
+    line-height: rem(16);
+    text-align: center;
+  }
+  &-card {
+    width: rem(214);
+    margin: rem(27) auto;
+    height: rem(319);
+  }
+  &-step {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 rem(36);
+    color: #7C6DB5;
+    font-size: rem(14);
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+.m-upgrade-modal-btn{
+  display: flex;
+    justify-content: center;
+}

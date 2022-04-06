@@ -1,0 +1,146 @@
+.web-gas {
+  padding: 0 rem(30);
+  box-sizing: border-box;
+  padding-bottom: rem(80);
+  overflow: hidden;
+  background: url(res("fleet/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  min-height: 100vh;
+  > img {
+    display: block;
+    width: 197px;
+    margin: auto;
+    margin-top: 53px;
+  }
+  &-day {
+    margin-top: rem(30);
+    p {
+      font-size: 20px;
+      line-height: 24px;
+      color: #7c6db5;
+      text-align: center;
+      margin-top: 44px;
+    }
+    &-box {
+      width: 520px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 40px;
+      &-min {
+        width: 127px;
+        height: 49px;
+        line-height: 49px;
+        font-size: 20px;
+        background: url(res("fleet/tab-border.png")) no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+        text-align: center;
+        color: #7d55ad;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: relative;
+        &-active {
+          color: #f0e7e0;
+          text-shadow: 0px 1.38889px 21.5278px #d091f7,
+            0px 1.38889px 13.8889px #d091f7;
+          font-weight: bold;
+          background: url(res("fleet/tab-border-active.png")) no-repeat;
+          background-position: 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  &-payment {
+    margin-top: rem(23);
+    p {
+      font-size: rem(14);
+      line-height: rem(16);
+      color: #7c6db5;
+      span {
+        font-family: "tt";
+        background-image: -webkit-linear-gradient(
+          top,
+          rgba(242, 255, 90, 1),
+          rgba(255, 177, 77, 1),
+          rgba(255, 177, 77, 1)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &-box {
+      width: 477px;
+      display: flex;
+      justify-content: center;
+      margin: 30px auto 0;
+      &-min {
+        width: 127px;
+        height: 49px;
+        background: url(res("fleet/tab-border.png")) no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+        text-align: center;
+        line-height: 49px;
+        font-size: 20px;
+        color: #7d55ad;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: relative;
+        margin-right: 42px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &-active {
+          color: #f0e7e0;
+          text-shadow: 0px 1.38889px 21.5278px #d091f7,
+            0px 1.38889px 13.8889px #d091f7;
+          font-weight: bold;
+          background: url(res("fleet/tab-border-active.png")) no-repeat;
+          background-position: 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(10);
+  }
+}
+.web-gas-day-box-min-hot-20::after {
+  width: 56px;
+  height: 26px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(res("new/hot-5.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  right: -30px;
+  top: -15px;
+}
+.web-gas-day-box-min-hot-40::after {
+  width: 56px;
+  height: 26px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(res("new/hot-10.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  right: -30px;
+  top: -15px;
+}
+
+.web-gas-choose-label {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #7c6db5;
+  margin-top: 50px;
+}

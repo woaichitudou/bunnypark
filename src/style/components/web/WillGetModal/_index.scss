@@ -1,0 +1,82 @@
+.web-will-get-modal {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &-title {
+    font-size: 25;
+    line-height: 30px;
+    text-align: center;
+    background-image: -webkit-linear-gradient(
+      top,
+      rgba(242, 240, 245, 1),
+      rgba(95, 119, 255, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+  }
+  &-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+    > img {
+      display: block;
+      width: 55px;
+    }
+    &-right {
+      margin-left: 15px;
+      > span {
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 3px;
+        text-align: center;
+        font-family: "tt";
+        background-image: -webkit-linear-gradient(
+          top,
+          rgba(242, 255, 90, 1),
+          rgba(255, 177, 77, 1),
+          rgba(255, 177, 77, 1)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      small {
+        display: block;
+        font-size: 15px;
+        line-height: 19px;
+        color: #7c6db5;
+        margin-top: 6px;
+        font-family: "tt";
+      }
+    }
+  }
+  &-sever {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #7c6db5;
+    margin-top: 30px;
+    > span {
+      font-family: "tt";
+    }
+  }
+  &-total {
+    font-size: 15px;
+    line-height: 21px;
+    color: #7c6db5;
+    margin-top: 46px;
+    text-align: center;
+    span {
+      background-image: -webkit-linear-gradient(
+        top,
+        rgba(242, 240, 245, 1),
+        rgba(95, 119, 255, 1)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-left: 3px;
+      font-family: "tt";
+    }
+  }
+}

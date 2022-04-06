@@ -1,0 +1,45 @@
+.web-title { 
+  height: 22px;
+  margin-top: 116px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  em {
+    font-size: 22px;
+    line-height: 20px;
+    @include wzjb(rgba(255, 255, 255, 1), rgba(243, 132, 237, 1));
+    margin: 0 36px;
+    text-align: center;
+    display: block;
+    margin-top: 2px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+.web-title-min {
+  em {
+    margin: 0 16px;
+  }
+}
+.web-title::before {
+  width: 82px;
+  height: 16px;
+  content: "";
+  display: block;
+  background: url(res("title/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+  margin-top: 2px;
+}
+.web-title::after {
+  width: 82px;
+  height: 16px;
+  content: "";
+  display: block;
+  background: url(res("title/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  margin-top: 2px;
+}

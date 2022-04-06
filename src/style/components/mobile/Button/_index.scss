@@ -1,0 +1,60 @@
+.m-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+}
+.m-button-size-default {
+  width: rem(242);
+  height: rem(111);
+  button {
+    width: rem(170);
+    font-size: rem(16);
+    height: rem(40);
+  }
+}
+
+.m-button-type-yellow {
+  background: url(res("btn/btn-yellow.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  button {
+    text-shadow: 0px 2px 2px #b45b00;
+  }
+}
+
+.m-button-type-blue {
+  background: url(res("btn/btn-blue.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  button {
+    text-shadow: 0px 2px 2px #0b3d60;
+  }
+}
+
+.m-button-size-small {
+  width: rem(142);
+  height: rem(45);
+  background: url(res("btn/btn-blue-small.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  button {
+    width: rem(90);
+    font-size: rem(12);
+    height: rem(20);
+    text-shadow: 0px 2px 2px #0b3d60;
+  }
+}
+
+.m-button:disabled {
+  filter: grayscale(85%);
+}
+.m-button-disabled{
+  filter: grayscale(85%);
+}

@@ -1,0 +1,115 @@
+.web-cities-list {
+  display: grid;
+  grid-template-columns: 427px 427px;
+  justify-content: space-between;
+  width: 970px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+.web-city-card {
+  margin-bottom:60px;
+  width: 427px;
+  // height: 580px;
+  &-title {
+    height: 73px;
+    width: 100%;
+    background: url(res("adventure/title-bg.png")) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 94px;
+    text-align: center;
+    color: #f5e2fd;
+    text-shadow: 0px 0px 4px #7906a0, 0px 0px 4px #7906a0, 0px 0px 4px #7906a0;
+    box-sizing: border-box;
+  }
+  &-box {
+    background: url(res("adventure/card-bg.png")) no-repeat;
+    background-size: 112% 100%;
+    background-position: center 0;
+    &-min {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      > img {
+        display: block;
+        width: 100%;
+      }
+      > ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 42% 42%;
+        justify-content: space-between;
+        padding: 0 17px;
+        box-sizing: border-box;
+        li {
+          position: relative;
+          margin-top: 30px;
+          > img {
+            display: block;
+            width: 36px;
+            position: absolute;
+            right: -5px;
+            top: -8px;
+          }
+          > span {
+            display: block;
+            font-size: 15px;
+            line-height: 18px;
+            color: #7c6db5;
+          }
+          > label {
+            display: block;
+            font-size: 22px;
+            line-height: 26px;
+            color: #f9fbf7;
+            text-shadow: 0px 0px 4px #7906a0, 0px 0px 4px #7906a0,
+              0px 0px 4px #7906a0;
+            margin-top: 6px;
+            font-family: "tt";
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.web-progress-bar {
+  width: 100%;
+  height: 17px;
+  position: relative;
+  margin-top: 7px;
+  overflow: hidden;
+  &-following {
+    background: #2d2a3f;
+    height: 8px;
+    width: 100%;
+    margin-top: rem(4);
+  }
+  &-above {
+    position: absolute;
+    z-index: 2;
+    height: 8px;
+    margin-top: rem(4);
+    background: linear-gradient(90deg, #8748ff 15.79%, #ff8ffe 92.11%);
+    left: 0;
+    width: 50%;
+  }
+}
+.web-progress-bar-above::after {
+  display: block;
+  content: "";
+  height: rem(14);
+  width: rem(13);
+  position: absolute;
+  right: rem(-3);
+  top: rem(-4);
+  z-index: 2;
+  background: url(res("adventure/bar.png")) no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+}

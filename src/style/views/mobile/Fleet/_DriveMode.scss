@@ -1,0 +1,37 @@
+.m-drive-mode {
+  padding: 0 rem(30);
+  box-sizing: border-box;
+  padding-bottom: rem(80);
+  overflow: hidden;
+  background: url(res("fleet/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  min-height: 100vh;
+  &-box {
+    width: rem(140);
+    margin: auto;
+    margin-top: rem(100);
+    > img {
+      width: rem(140);
+      display: block;
+      cursor: pointer;
+    }
+    > span {
+      background-image: -webkit-linear-gradient(
+        top,
+        rgba(242, 240, 245, 1),
+        rgba(95, 119, 255, 1)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      text-align: center;
+      font-size: rem(14);
+      line-height: rem(16);
+      margin-top: rem(8);
+    }
+  }
+}
+.m-drive-mode .m-drive-mode-box + .m-drive-mode-box {
+  margin-top: rem(72);
+}

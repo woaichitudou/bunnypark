@@ -1,0 +1,36 @@
+.m-rabbit-sure-upgrade {
+  text-transform: uppercase;
+  text-align: center;
+  color: #7c6db5;
+  P {
+    font-family: "gilroy";
+    font-size: rem(14);
+    line-height: rem(16);
+    margin-top: rem(45);
+    span {
+      font-family: "tt";
+    }
+  }
+  div.balance {
+    text-align: left;
+    margin-top: rem(36);
+    font-size: rem(12);
+    div {
+      text-align: center;
+    }
+    div:last-child {
+      margin-top: rem(8);
+    }
+    span {
+      background-image: -webkit-linear-gradient(
+        top,
+        rgba(242, 240, 245, 1),
+        rgba(95, 119, 255, 1)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-left: rem(4);
+      font-family: "tt";
+    }
+  }
+}

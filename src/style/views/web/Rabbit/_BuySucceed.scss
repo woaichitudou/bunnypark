@@ -1,0 +1,89 @@
+.web-rabbit-suc {
+  width: 817px;
+  margin: 0 auto;
+  padding-top: 192px;overflow: hidden;
+  >div.title {
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'gilroy';
+    font-size: 34px;
+    line-height: 36px;
+    background: linear-gradient(180deg, #FDFDFF 25%, #7990D6 78.12%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 365px;
+      height: 64px;
+      left: 50%;
+      transform: translate(-50%);
+      top: 0;
+      background: url(res('rabbit/suc-light.png'));
+      background-size: 100% 100%;
+      z-index: -1;
+    }
+  }
+  >p.desc {
+    width: 261px;
+    color: #7C6DB5;
+    font-size: 17px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 52px;
+  }
+  >p.total {
+    margin-top: 17px;
+  }
+  .web-c-card-bunnycard {
+    position: relative;
+    width: 266px;
+    height: 397px;
+    background: pink;
+  }
+  .swiper-container {
+    overflow: visible;
+    width: 266px;
+    margin-top: 28px;
+  }
+  .swiper-slide {
+    display: flex;justify-content: center;
+    .web-c-card-bunnycard, .web-c-card-babycard {
+      cursor: pointer;
+      transform: scale(0.7);
+    }
+    &.swiper-slide-active  {
+      .web-c-card-bunnycard, .web-c-card-babycard {
+        transform: scale(1);
+        &:after {
+          content: '';display: block;position: absolute;left: -62px;right: -50px;bottom: -72px;height: 171px;
+          background: url(res('rabbit/circle-bottom-suc.png'));
+          background-size: 100% 100%;
+          z-index: 10;
+          @include dz();
+        }
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 107px;
+    margin-bottom: 56px;
+    span {
+      background: linear-gradient(180deg, #F2F0F5 0%, #5F77FF 100%),
+      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+      background-clip: text;
+      color: transparent;
+      font-size: 24px;
+      margin-right: 12px;
+    }
+    img {
+      width: 25px;
+    }
+  }
+}

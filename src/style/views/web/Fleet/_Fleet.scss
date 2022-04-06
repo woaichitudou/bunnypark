@@ -1,0 +1,52 @@
+.web-header-fleet {
+  box-sizing: border-box;
+  padding-bottom: rem(80);
+  overflow: hidden;
+  background: url(res("fleet/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  min-height: 100vh;
+  &-no-data {
+    overflow: hidden;
+    > img {
+      display: block;
+      width: rem(117);
+      margin: auto;
+      margin-top: rem(130);
+    }
+    span {
+      font-weight: bold;
+      font-size: rem(16);
+      line-height: rem(16);
+      background-image: -webkit-linear-gradient(bottom, #3256cd, #72f9fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      margin: auto;
+      margin-top: rem(20);
+      text-align: center;
+    }
+    .m-button {
+      margin: rem(130) auto 0;
+    }
+  }
+  &-content {
+    width: 970px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 60px;
+    &-box {
+      width: 218px;
+      height: 394px;
+      margin: auto;
+      margin-bottom: 40px;
+      &-min {
+        width: rem(142);
+        height: rem(206);
+        margin: auto;
+        margin-bottom: rem(10);
+      }
+    }
+  }
+}

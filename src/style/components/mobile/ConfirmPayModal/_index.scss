@@ -1,0 +1,58 @@
+.m-confirm-pay {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &-title {
+    font-size: rem(20);
+    line-height: rem(20);
+    text-align: center;
+    margin-top: rem(20);
+    @include wzjb(rgba(242, 240, 245, 1), rgba(95, 119, 255, 1));
+    white-space: nowrap;
+  }
+  > img {
+    display: block;
+    width: rem(78);
+    margin-top: rem(23);
+  }
+  &-price {
+    font-size: rem(20);
+    line-height: rem(20);
+    font-weight: bold;
+    width: 110%;
+    text-align: center;
+    margin-top: rem(20);
+    span {
+      font-size: rem(12);
+    }
+    p {
+      @include wzjb(rgba(242, 255, 90, 1), rgba(255, 177, 77, 1));
+    }
+    p:last-child {
+      margin-top: rem(13);
+    }
+  }
+  &-total {
+    font-size: rem(12);
+    line-height: rem(14);
+    color: #7c6db5;
+    margin-top: rem(25);
+    width: 110%;
+    span {
+      color: #7c6db5;
+      em {
+        @include wzjb(rgba(242, 240, 245, 1), rgba(95, 119, 255, 1));
+        margin-left: rem(5);
+        padding: 0 rem(3);
+        font-family: "tt";
+      }
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+    p:last-child {
+      margin-top: rem(10);
+    }
+  }
+}

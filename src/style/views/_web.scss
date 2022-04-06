@@ -1,0 +1,17 @@
+.web-home {
+  width: 100%;min-height: 100vh;
+  background: url($res + 'common/web-bg.jpg') center/cover no-repeat;
+  display: flex;justify-content: center;align-items: center;
+  &-phone {
+    display: flex;justify-content: center;align-items: center;
+    width: 405*2px;height: 841*2px;
+    @include fd(.5);
+    &-layout {
+      width: 405px;height: 841px;display: flex;justify-content: center;align-items: center;
+      background: url($res + 'common/web-phone.png') center/contain no-repeat;
+    }
+  }
+  &-iframe {
+    display: block;border: none;border-radius: 30px;position: relative;
+  }
+}

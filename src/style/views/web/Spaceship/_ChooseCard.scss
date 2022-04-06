@@ -1,0 +1,82 @@
+.web-choose-card {
+  width: 970px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 100px;
+  > p {
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    text-align: center;
+    color: #7c6db5;
+    margin-top: 20px;
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: 205px 205px 205px 205px;
+    justify-content: space-between;
+    margin-top: 60px;
+    &-box {
+      width: 205px;
+      position: relative;
+      margin-bottom: 30px;
+      &-radio {
+        position: absolute;
+        right: 9px;
+        top: 8px;
+        &-min {
+          position: relative;
+          input {
+            opacity: 0;
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            z-index: 22;
+            left: 0;
+          }
+          label {
+            cursor: pointer;
+            position: relative;
+            width: 26px;
+            height: 26px;
+            display: block;
+            background: url(res("adventure/radio-bg.png")) no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+          }
+          input:checked + label span {
+            display: block;
+            content: "";
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+          input:checked + label span::after {
+            display: block;
+            content: "";
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            background: url(res("adventure/radio.png")) no-repeat;
+            background-position: center;
+            background-size: 60% auto;
+          }
+        }
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    bottom: rem(50);
+  }
+}

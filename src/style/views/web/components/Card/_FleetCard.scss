@@ -1,0 +1,202 @@
+.web-c-card-fleetcard {
+  width: 218px;
+  height: 315px;
+  padding-top: rem(12);
+  position: relative;
+  background: url($res + "common/fleet-card-bg.png") center/100% 100% no-repeat;
+  font-family: "Gilroy";
+  &-image {
+    margin: 0 rem(12);
+    &,
+    img {
+      display: block;
+      width: 200px;
+      margin: auto;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 8px;
+    @include jb(#fdfdff, #537dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: rem(8);
+    padding: 16px 20px 0;
+    color: #bfc4f6;
+    font-family: "tt";
+    font-weight: 200;
+    font-size: rem(10);
+    li {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      font-size: 15px;
+      &:before {
+        content: "";
+        display: block;
+        width: 14px;
+        height: 14px;
+        margin-right: 7px;
+        background: center/contain no-repeat;
+      }
+      &:nth-child(1):before {
+        background-image: url($res + "common/icon-info.png");
+      }
+      &:nth-child(2):before {
+        background-image: url($res + "common/icon-oil.png");
+      }
+      &:nth-child(3):before {
+        background-image: url($res + "common/icon-fight.png");
+      }
+      &:nth-child(4):before {
+        background-image: url($res + "common/icon-ticket.png");
+      }
+    }
+  }
+  .web-c-card-fleetcard-time {
+    width: rem(69);
+    height: rem(19);
+    position: absolute;
+    top: rem(100);
+    left: rem(36);
+    color: #bfc4f6;
+    font-size: rem(10);
+    padding: 0 rem(8);
+    box-sizing: border-box;
+    background: url(res("fleet/sleep-bg.png"));
+    background-size: 100% 100%;
+    line-height: rem(19);
+    vertical-align: middle;
+    img {
+      width: rem(11);
+      margin-top: rem(-2);
+      margin-right: rem(3);
+    }
+  }
+  &-status {
+    &-rest,
+    &-oilless {
+      label {
+        position: absolute;
+        top: rem(12);
+        left: rem(12);
+        right: rem(12);
+        display: block;
+        width: 200px;
+        margin: auto;
+        height: 200px;
+        background: center/100% 100% no-repeat;
+      }
+    }
+    &-rest label {
+      display: block;
+      background-image: url($res + "fleet/rest.png");
+    }
+    &-oilless label {
+      background-image: url($res + "fleet/insufficient.png");
+    }
+  }
+  &-rear {
+    background: #121115;
+    position: absolute;
+    left: rem(8);
+    top: rem(12);
+    bottom: rem(12);
+    right: rem(8);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    p {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      span,
+      em,
+      i {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        color: #6b60ae;
+        font-size: 15px;
+        margin: 0 8px;
+        &:before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 50px;
+          margin-bottom: 9px;
+          background: center/contain no-repeat;
+        }
+      }
+      i {
+        margin-left: rem(5);
+        margin-right: rem(5);
+      }
+      span:before {
+        background-image: url($res + "common/icon-send.png");
+      }
+      i:before {
+        background-image: url($res + "common/icon-detail.png");
+      }
+      em:before {
+        background-image: url($res + "common/icon-sell.png");
+      }
+    }
+    button {
+      border: 1px solid #cb8df2;
+      color: #cb8df2;
+      font-size: 18px;
+      width: 159.51px;
+      height: 49.08px;
+      margin-top: 30px;
+      background: #121115;
+      border-radius: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    &-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+.web-c-card-fleetcard-min {
+  width: 182px;
+  height: 264px;
+  .web-c-card-fleetcard-image {
+    width: 182px;
+    margin: 0 rem(12);
+    &,
+    img {
+      display: block;
+      width: 156px;
+      margin: auto;
+      margin-top: 15px;
+    }
+  }
+  .web-c-card-fleetcard-info {
+    padding: 0 20px 0;
+    grid-template-columns: 40% 40%;
+      justify-content: space-between;
+    li {
+      
+      margin-top: 10px;
+      font-size: 12.8179px;
+      line-height: 15px;
+    }
+  }
+}

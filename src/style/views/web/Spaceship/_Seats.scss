@@ -1,0 +1,143 @@
+.web-bunny-build-fleet-bg {
+  background: url($res + "compatibility-pc/bg.png") center rem(-150) / 100% auto
+    repeat;
+  .web-pilot-label {
+    width: 520px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+.web-bunny-build-fleet {
+  @extend .cf;
+  position: relative;
+  width: 970px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  & > dl {
+    position: absolute;
+    width: rem(80);
+    height: rem(126);
+    top: rem(80);
+    background: center/100% 100% no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    &.power {
+      background-image: url($res + "common/fight-value-box.png");
+      left: rem(15);
+    }
+    &.luck {
+      background-image: url($res + "common/fight-value-box.png");
+      right: rem(15);
+    }
+    dt {
+      font-size: rem(10);
+      color: #9292ae;
+      margin: rem(24) 0 rem(12);
+    }
+    dd {
+      color: #a3a4fe;
+      font-size: rem(16);
+      font-family: "tt";
+      font-weight: 200;
+    }
+  }
+  &-seat {
+    margin: auto;
+    margin-top: 37px;
+    display: grid;
+    width: 478px;
+    position: relative;
+    &-item {
+      width: 86px;
+      height: 86px;
+      position: relative;
+      margin: auto;
+      background: url($res + "common/ship-space-add.png") no-repeat;
+      background-size: 100% auto;
+      background-position: 0 -5px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        width: 66px;
+      }
+      del {
+        background: url($res + "common/icon-close.png") center/contain no-repeat;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        top: 8px;
+        right: -4px;
+      }
+    }
+    &-4,
+    &-2 {
+      grid-template-columns: 30% 30%;
+      justify-content: center;
+      .web-bunny-build-fleet-seat-item {
+      }
+    }
+    &-6 {
+      display: block;
+      .web-bunny-build-fleet-seat-item {
+        position: absolute;
+        &:nth-child(1) {
+          top: 0px;
+          left: 142px;
+        }
+        &:nth-child(2) {
+          left: 254px;
+          top: 0px;
+        }
+        &:nth-child(4) {
+          top: 50px;
+          left: 30px;
+        }
+        &:nth-child(3) {
+          top: 106px;
+          left: 142px;
+        }
+        &:nth-child(5) {
+          left: 254px;
+          top: 106px;
+        }
+        &:nth-child(6) {
+          top: 50px;
+          left: 366px;
+        }
+      }
+    }
+    &-8 {
+      left: rem(10);
+      right: rem(10);
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      .web-bunny-build-fleet-seat-item:nth-child(2),
+      .web-bunny-build-fleet-seat-item:nth-child(3),
+      .web-bunny-build-fleet-seat-item:nth-child(6),
+      .web-bunny-build-fleet-seat-item:nth-child(7) {
+        top: 20px;
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 174px;
+    left: 0;
+    right: 0;
+  }
+  & > h4 {
+    text-align: center;
+    color: #efbeff;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 86px;
+  }
+}

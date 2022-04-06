@@ -1,0 +1,178 @@
+.m-c-card-fleetcard {
+  width: rem(142);
+  height: rem(206);
+  padding-top: rem(12);
+  position: relative;
+  background: url($res + "common/fleet-card-bg.png") center/100% 100% no-repeat;
+  font-family: "Gilroy";
+  &-image {
+    margin: 0 rem(12);
+    &,
+    img {
+      display: block;
+      width: rem(118);
+      height: rem(118);
+    }
+  }
+  h4 {
+    text-align: center;
+    font-size: rem(12);
+    margin-top: rem(8);
+    @include jb(#fdfdff, #537dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: rem(8);
+    padding: rem(18) rem(10) 0;
+    color: #bfc4f6;
+    font-family: "tt";
+    font-weight: 200;
+    font-size: rem(10);
+    li {
+      display: flex;
+      align-items: center;
+      &:before {
+        content: "";
+        display: block;
+        width: rem(10);
+        height: rem(10);
+        margin-right: rem(5);
+        background: center/contain no-repeat;
+      }
+      &:nth-child(1):before {
+        background-image: url($res + "common/icon-info.png");
+      }
+      &:nth-child(2):before {
+        background-image: url($res + "common/icon-oil.png");
+      }
+      &:nth-child(3):before {
+        background-image: url($res + "common/icon-fight.png");
+      }
+      &:nth-child(4):before {
+        background-image: url($res + "common/icon-ticket.png");
+      }
+    }
+  }
+  .m-c-card-fleetcard-time {
+    width: rem(69);
+    height: rem(19);
+    position: absolute;
+    top: rem(100);
+    left: rem(36);
+    color: #BFC4F6;
+    font-size: rem(10);
+    padding: 0 rem(8);
+    box-sizing: border-box;
+    background: url(res('fleet/sleep-bg.png'));
+    background-size: 100% 100%;
+    line-height: rem(19);
+    vertical-align: middle;
+    img {
+      width: rem(11);
+      margin-top: rem(-2);
+      margin-right: rem(3);
+    }
+  }
+  &-status {
+    &-rest,
+    &-oilless {
+      // &:before {
+      //   position: absolute;top: rem(12);left: rem(12);right: rem(12);
+      //   content: '';display: block;width: rem(118);height: rem(118);
+      //   background: center/100% 100% no-repeat;
+      // }
+      label {
+        position: absolute;
+        top: rem(12);
+        left: rem(12);
+        right: rem(12);
+        display: block;
+        width: rem(118);
+        height: rem(118);
+        background: center/100% 100% no-repeat;
+      }
+    }
+    &-rest label {
+      display: block;
+      background-image: url($res + "fleet/rest.png");
+    }
+    // &-oilless:before {
+    //   background-image: url($res + "fleet/insufficient.png");
+    // }
+    &-oilless label {
+      background-image: url($res + "fleet/insufficient.png");
+    }
+  }
+  &-rear {
+    background: #121115;
+    position: absolute;
+    left: rem(8);
+    top: rem(12);
+    bottom: rem(12);
+    right: rem(8);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: rem(8);
+    p {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      span,
+      em,
+      i {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        color: #6b60ae;
+        font-size: rem(10);
+        &:before {
+          content: "";
+          display: block;
+          width: rem(32);
+          height: rem(32);
+          margin-bottom: rem(5);
+          background: center/contain no-repeat;
+        }
+      }
+      i {
+        margin-left: rem(5);
+        margin-right: rem(5);
+      }
+      span:before {
+        background-image: url($res + "common/icon-send.png");
+      }
+      i:before {
+        background-image: url($res + "common/icon-detail.png");
+      }
+      em:before {
+        background-image: url($res + "common/icon-sell.png");
+      }
+    }
+    button {
+      border: 1px solid #cb8df2;
+      color: #cb8df2;
+      font-size: rem(10);
+      width: rem(104);
+      margin-top: rem(18);
+      background: #121115;
+      height: rem(23);
+      border-radius: rem(3);
+      position: relative;
+      z-index: 1;
+    }
+    &-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

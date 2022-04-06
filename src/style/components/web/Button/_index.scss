@@ -1,0 +1,61 @@
+.web-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+}
+.web-button-size-default {
+  width: 358px;
+  height: 156px;
+  button {
+    width: 218px;
+    font-size: 23px;
+    height: 66px;
+  }
+}
+
+.web-button-type-yellow {
+  background: url(res("btn/btn-yellow.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  button {
+    text-shadow: 0px 2px 2px #b45b00;
+  }
+}
+
+.web-button-type-blue {
+  background: url(res("btn/btn-blue.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  button {
+    text-shadow: 0px 2px 2px #0b3d60;
+  }
+}
+
+.web-button-size-small {
+  width: 208.88px;
+  height: 64.26px;
+  background: url(res("btn/btn-blue-small.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  button {
+    width: 120px;
+    font-size: 18px;
+    height: 28px;
+    text-shadow: 0px 2px 2px #0b3d60;
+  }
+}
+
+.web-button:disabled {
+  filter: grayscale(85%);
+}
+.web-button-disabled {
+  filter: grayscale(85%);
+}

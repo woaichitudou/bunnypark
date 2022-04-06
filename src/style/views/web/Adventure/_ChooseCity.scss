@@ -1,0 +1,15 @@
+.web-choose-city {
+  p {
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #7c6db5;
+    margin-top: 12px;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14px;
+  }
+}

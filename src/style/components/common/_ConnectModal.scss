@@ -1,0 +1,85 @@
+.m-connect-modal {
+  display: flex;
+  flex-direction: column;
+  &-item {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-size: 10px;
+    padding: 0 17px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    background: url(res("button-wallet-connect.png"));
+    background-size: 100% 100%;
+    &-title {
+      font-size: 16px;
+      color: #00fff6;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      background: url(res("button-wallet-connect-active.png"));
+      background-size: 100% 100%;
+      .m-connect-modal-item-title {
+        color: #fff976;
+      }
+    }
+    &-img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 8px;
+  }
+
+  &-content {
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      color: #1fc7d4;
+      font-size: 14px;
+      margin-right: 16px;
+      font-weight: 600;
+    }
+    &-copy {
+      display: flex;
+      align-items: center;
+      color: #1fc7d4;
+      font-size: 14px;
+      margin-right: 16px;
+      font-weight: 600;
+    }
+  }
+  &-mobile &-item {
+    height: rem(31);
+    padding: 0 rem(19);
+    margin-bottom: rem(19);
+    &-title {
+      padding-top: rem(3);
+      text-shadow: 0 rem(1.5) rem(22) rgba($primary, 0.8),
+        0px rem(1.5) rem(14) rgba($primary, 0.8);
+      white-space: nowrap;
+      font-size: rem(10);
+    }
+    &-img {
+      border-radius: 50%;
+      position: relative;
+      top: rem(1.5);
+      width: rem(20);
+      height: rem(19);
+      margin-right: rem(18);
+    }
+  }
+}

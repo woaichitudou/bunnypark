@@ -1,0 +1,7 @@
+.m-copy-spanner {
+  &:after {
+    content: '';margin-left: rem(5);
+    display: inline-block;width: rem(10);height: rem(10);
+    background: url($res + 'common/icon-copy.png') center/contain no-repeat;vertical-align: text-top;
+  }
+}

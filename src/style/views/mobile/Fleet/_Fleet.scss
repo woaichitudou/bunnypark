@@ -1,0 +1,51 @@
+.m-header-fleet {
+  padding: 0 rem(30);
+  box-sizing: border-box;
+  padding-bottom: rem(80);
+  overflow: hidden;
+  background: url(res("fleet/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  min-height: 100vh;
+  &-no-data {
+    overflow: hidden;
+    > img {
+      display: block;
+      width: rem(117);
+      margin: auto;
+      margin-top: rem(130);
+    }
+    span {
+      font-weight: bold;
+      font-size: rem(16);
+      line-height: rem(16);
+      background-image: -webkit-linear-gradient(bottom, #3256cd, #72f9fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      margin: auto;
+      margin-top: rem(20);
+      text-align: center;
+    }
+    .m-button {
+      margin: rem(130) auto 0;
+    }
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: rem(36);
+    &-box {
+      width: rem(142);
+      height: rem(256);
+      margin: auto;
+      margin-bottom: rem(16);
+      &-min {
+        width: rem(142);
+        height: rem(206);
+        margin: auto;
+        margin-bottom: rem(10);
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.m-c-card-shipcard {
+  width: rem(134);
+  height: rem(150);
+  padding-top: rem(130);
+  background: center/contain no-repeat;
+  &-seat {
+    &-2 {
+      background-image: url($res + "cards/ship-2.png");
+    }
+    &-4 {
+      background-image: url($res + "cards/ship-4.png");
+    }
+    &-6 {
+      background-image: url($res + "cards/ship-6.png");
+    }
+    &-8 {
+      background-image: url($res + "cards/ship-8.png");
+    }
+  }
+  h4 {
+    text-align: center;
+    font-size: rem(12);
+    @include jb(#fdfdff, #537dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.m-c-card-shipcard-box-rear {
+  width: rem(134);
+  height: rem(150);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url($res + "cards/card-border.png") center/100% 100% no-repeat;
+  box-sizing: border-box;
+  padding: 0 rem(10);
+  i {
+    color: #6b60ae;
+    font-size: rem(10);
+    text-align: center;
+    &:before {
+      content: "";
+      display: block;
+      width: rem(24);
+      height: rem(24);
+      background: url($res + "common/icon-send.png") center/100% 100% no-repeat;
+      margin: auto;
+      margin-bottom: rem(5);
+     
+    }
+  }
+  em {
+    color: #6b60ae;
+    font-size: rem(10);
+    text-align: center;
+    &:before {
+      content: "";
+      display: block;
+      width: rem(24);
+      height: rem(24);
+      background: url($res + "common/icon-sell.png") center/100% 100% no-repeat;
+      margin: auto;
+      margin-bottom: rem(5);
+    }
+  }
+}
+.m-send-card-box .m-c-card-shipcard-box{
+  margin-top: rem(50);
+}

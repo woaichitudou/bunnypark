@@ -1,0 +1,11 @@
+.web-copy-spanner {
+  &:after {
+    content: "";
+    margin-left: 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url($res + "common/icon-copy.png") center/contain no-repeat;
+    vertical-align: text-top;
+  }
+}

@@ -1,0 +1,279 @@
+.m-c-card-bunnycard,
+.m-c-card-babycard {
+  font-family: "Gilroy";
+  position: relative;
+  .m-c-card-inset {
+    background: url($res + "common/card-border-medium-mini.png") left top/100%
+      auto repeat-y;
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    &:before {
+      top: 0;
+      background: url($res + "common/card-border-top-mini.png") left top/100%
+        auto no-repeat;
+    }
+    &:after {
+      bottom: 0;
+      background: url($res + "common/card-border-bottom-mini.png") left
+        bottom/100% auto no-repeat;
+    }
+    &-rear {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      p {
+        width: rem(85);
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        span,
+        em {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          color: #6b60ae;
+          font-size: rem(10);
+          &:before {
+            content: "";
+            display: block;
+            width: rem(23);
+            height: rem(23);
+            margin-bottom: rem(5);
+            background: center/contain no-repeat;
+          }
+        }
+        span:before {
+          background-image: url($res + "common/icon-send.png");
+        }
+        em:before {
+          background-image: url($res + "common/icon-sell.png");
+        }
+      }
+      button {
+        border: 1px solid #cb8df2;
+        color: #cb8df2;
+        font-size: rem(10);
+        width: rem(85);
+        margin-top: rem(18);
+        background: #121115;
+        height: rem(23);
+        border-radius: rem(3);
+        position: relative;
+        z-index: 1;
+      }
+      &-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  .m-c-card-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .m-c-card-info {
+    position: relative;
+    h4 {
+      @include jb(#fdfdff, #537dff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .m-copy-spanner, span {
+      display: block;
+      color: #7c6db5;
+    }
+    &:after,
+    &-luck {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background: center/contain no-repeat;
+      @include yd(0, -50%);
+    }
+    &-n:after {
+      background-image: url($res + "common/card-icon-n.png");
+    }
+    &-r:after {
+      background-image: url($res + "common/card-icon-r.png");
+    }
+    &-sr:after {
+      background-image: url($res + "common/card-icon-sr.png");
+    }
+    &-luck {
+      color: #12e0ed;
+      font-size: rem(11);
+      display: flex;
+      align-items: center;
+      &:before {
+        content: "";
+        display: block;
+        width: rem(10);
+        height: rem(12);
+        margin-right: rem(3);
+        background: url($res + "common/icon-luck.png") center/contain no-repeat;
+      }
+    }
+  }
+  .m-c-card-level {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    em {
+      display: block;
+      background: url($res + "common/card-fight-disable.png") center/contain
+        no-repeat;
+      &.active {
+        background-image: url($res + "common/card-fight-acitve.png");
+      }
+    }
+    span {
+      position: absolute;
+      top: 0;
+      color: #12e0ed;
+      font-family: 'tt';
+    }
+  }
+}
+.m-c-card {
+  &-size {
+    &-mini {
+      width: rem(134);
+      height: rem(200);
+      padding: rem(10) 0;
+      .m-c-card-inset {
+        padding: 0 rem(10);
+        height: rem(180);
+        &:before,
+        &:after {
+          height: rem(10);
+        }
+        &-rear {
+          height: rem(180);
+        }
+      }
+      .m-c-card-image {
+        height: rem(110);
+        > img {
+          border-radius: rem(12);
+        }
+      }
+      .m-c-card-info {
+        margin: rem(8) 0;
+        position: relative;
+        h4 {
+          font-size: rem(12);
+          line-height: rem(14);
+        }
+        label {
+          position: absolute;
+          right: 0;
+          top: rem(7);
+          font-size: rem(12);
+          line-height: rem(14);
+          color: #12e0ed;
+        }
+        .m-copy-spanner, span {
+          font-size: rem(9);
+          line-height: rem(12);
+        }
+        &:after {
+          width: rem(18);
+          height: rem(18);
+        }
+      }
+      .m-c-card-level {
+        width: rem(84);
+        grid-row-gap: rem(5);
+        em {
+          width: rem(8);
+          height: rem(8);
+        }
+        span {
+          font-size: rem(11);
+          right: rem(-30);
+        }
+      }
+    }
+    &-small {
+      width: rem(215);
+      height: rem(320);
+      padding: rem(16) 0;
+      .m-c-card-inset {
+        padding: 0 rem(12);
+        height: rem(288);
+        &:before,
+        &:after {
+          height: rem(16);
+        }
+        &-rear {
+          height: rem(288);
+        }
+      }
+      .m-c-card-image {
+        height: rem(175);
+      }
+      .m-c-card-info {
+        margin: rem(15) 0;
+        h4 {
+          font-size: rem(18);
+          line-height: rem(24);
+        }
+        .m-copy-spanner, span {
+          font-size: rem(14);
+          line-height: rem(16);
+        }
+        &:after {
+          width: rem(30);
+          height: rem(30);
+        }
+      }
+      .m-c-card-level {
+        width: rem(140);
+        grid-row-gap: rem(10);
+        em {
+          width: rem(14);
+          height: rem(14);
+        }
+        span {
+          font-size: rem(18);
+          right: rem(-50);
+        }
+      }
+    }
+  }
+}
+.m-c-card-babycard.m-c-card {
+  &-size {
+    &-mini {
+      height: rem(170);
+      .m-c-card-inset {
+        height: rem(150);
+        &-rear {
+          height: rem(150);
+        }
+      }
+    }
+  }
+}

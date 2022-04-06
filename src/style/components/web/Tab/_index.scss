@@ -1,0 +1,33 @@
+.web-tab {
+  width: 474px;
+  height: 64px;
+  background: url(res("tab/border.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  margin: 39px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+  cursor: pointer;
+  span {
+    font-size: 20px;
+    line-height: 63px;
+    text-align: center;
+    color: #7d55ad;
+    display: block;
+    flex: 1;
+  }
+  &-active {
+    background: url(res("tab/border-act.png")) no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+    line-height: 49px !important;
+    height: 49px;
+    width: 221px;
+    font-weight: bold;
+    color: #f0e7e0 !important;
+    text-shadow: 0px 1.38889px 21.5278px #d091f7,
+      0px 1.38889px 13.8889px #d091f7;
+  }
+}

@@ -1,0 +1,139 @@
+.m-gas {
+  padding: 0 rem(30);
+  box-sizing: border-box;
+  padding-bottom: rem(80);
+  overflow: hidden;
+  background: url(res("fleet/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  min-height: 100vh;
+  > img {
+    display: block;
+    width: rem(134);
+    margin: auto;
+    margin-top: rem(35);
+  }
+  &-day {
+    margin-top: rem(30);
+    p {
+      font-size: rem(14);
+      line-height: rem(16);
+      color: #7c6db5;
+      text-align: center;
+    }
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      margin-top: rem(20);
+      &-min {
+        width: rem(90);
+        height: rem(34);
+        background: url(res("fleet/tab-border.png")) no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+        text-align: center;
+        line-height: rem(36);
+        font-size: rem(14);
+        color: #7d55ad;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: relative;
+        &-active {
+          color: #f0e7e0;
+          text-shadow: 0px 1.38889px 21.5278px #d091f7,
+            0px 1.38889px 13.8889px #d091f7;
+          font-weight: bold;
+          background: url(res("fleet/tab-border-active.png")) no-repeat;
+          background-position: 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  &-payment {
+    margin-top: rem(23);
+    p {
+      font-size: rem(14);
+      line-height: rem(16);
+      color: #7c6db5;
+      span {
+        font-family: "tt";
+        background-image: -webkit-linear-gradient(
+          top,
+          rgba(242, 255, 90, 1),
+          rgba(255, 177, 77, 1),
+          rgba(255, 177, 77, 1)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    &-box {
+      display: flex;
+      justify-content: center;
+      margin-top: rem(20);
+      &-min {
+        width: rem(135);
+        height: rem(34);
+        background: url(res("fleet/tab-border.png")) no-repeat;
+        background-position: 0 0;
+        background-size: 100% 100%;
+        text-align: center;
+        line-height: rem(34);
+        font-size: rem(14);
+        color: #7d55ad;
+        cursor: pointer;
+        box-sizing: border-box;
+        position: relative;
+        margin-right: rem(20);
+        &:last-child{margin-right: 0}
+        &-active {
+          color: #f0e7e0;
+          text-shadow: 0px 1.38889px 21.5278px #d091f7,
+            0px 1.38889px 13.8889px #d091f7;
+          font-weight: bold;
+          background: url(res("fleet/tab-border-active.png")) no-repeat;
+          background-position: 0 0;
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(10);
+  }
+}
+.m-gas-day-box-min-hot-20::after {
+  width: rem(38);
+  height: rem(18);
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(res("new/hot-5.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  right: rem(-10);
+  top: rem(-10);
+}
+.m-gas-day-box-min-hot-40::after {
+  width: rem(38);
+  height: rem(18);
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(res("new/hot-10.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  right: rem(-10);
+  top: rem(-10);
+}
+.m-gas-choose-label{
+  font-size: rem(14);
+  line-height: rem(16);
+  color: #7c6db5;
+  margin-top: rem(28);
+  text-align: center;
+}

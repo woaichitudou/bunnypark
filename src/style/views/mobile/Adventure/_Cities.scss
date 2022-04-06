@@ -1,0 +1,61 @@
+.m-cities {
+  box-sizing: border-box;
+  padding-bottom: rem(80);
+  overflow: hidden;
+  &-dashboard {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: url(res("adventure/home-bg.png")) no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+    padding: 0 rem(20);
+    > img {
+      width: rem(94);
+      display: block;
+      margin-top: rem(50);
+    }
+    > label {
+      position: relative;
+      font-size: rem(24);
+      line-height: rem(28);
+      text-align: center;
+      color: #f9fbf7;
+      text-shadow: 0px 0px 4px #7906a0, 0px 0px 4px #7906a0, 0px 0px 4px #7906a0;
+      display: block;
+      margin-top: rem(28);
+    }
+    > p {
+      font-size: rem(14);
+      line-height: rem(20);
+      text-align: center;
+      color: #f9fbf7;
+      text-shadow: 0px 0px 4px #7906a0, 0px 0px 4px #7906a0, 0px 0px 4px #7906a0;
+      margin-top: rem(28);
+    }
+    > small {
+      margin-top: rem(28);
+      display: block;
+      text-align: center;
+      font-size: rem(14);
+      line-height: rem(16);
+      text-align: center;
+      color: #f9fbf7;
+      text-shadow: 0px 0px 4px #7906a0, 0px 0px 4px #7906a0, 0px 0px 4px #7906a0;
+    }
+  }
+}
+
+.m-cities-dashboard > label::before{
+  width: rem(252);
+  height: rem(52);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: rem(-126);
+  bottom: rem(-30);
+  background: url(res("details/halo.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}

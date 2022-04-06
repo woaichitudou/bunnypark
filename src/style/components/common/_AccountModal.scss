@@ -1,0 +1,86 @@
+.account-modal {
+  &-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  &-title {
+    font-size: rem(14);
+    line-height: rem(24);
+    text-align: center;
+    text-transform: uppercase;
+    color: #c7e8ef;
+    opacity: 0.85;
+    white-space: normal;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: normal;
+    margin-top: rem(43);
+  }
+
+  &-content {
+    margin-top: rem(16);
+    a {
+      font-size: rem(14);
+      line-height: rem(24);
+      text-align: center;
+      text-transform: uppercase;
+      color: #adcfd9;
+      opacity: 0.65;
+      display: block;
+      text-align: center;
+    }
+    &-copy {
+      font-size: rem(14);
+      line-height: rem(24);
+      text-align: center;
+      text-transform: uppercase;
+      color: #adcfd9;
+      opacity: 0.65;
+    }
+  }
+  &-mobile &-title {
+    color: $c00;
+    font-size: rem(10);
+    font-weight: normal;
+  }
+  &-mobile &-content {
+    justify-content: space-between;
+    a,
+    &-copy {
+      font-size: rem(10);
+      white-space: nowrap;
+      text-transform: uppercase;
+      padding: 0 rem(12);
+      height: rem(20);
+      line-height: rem(20);
+      border: 1px solid $line;
+      border-radius: rem(10);
+    }
+    &-copy-btn {
+      position: absolute;
+      top: 110%;
+      left: 25%;
+      color: $cff;
+      line-height: 1.4;
+      background: rgba($bg, 0.8);
+      padding: rem(2.5) rem(5);
+      border-radius: rem(2.5);
+    }
+  }
+  &-mobile &-button {
+    font-family: "AGENCYB";
+    text-transform: uppercase;
+  }
+}
+.account-modal-btn {
+  position: absolute;
+  left: 0;
+  bottom: rem(60);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.web-modal-cont {
+  position: relative;
+}

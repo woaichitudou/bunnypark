@@ -1,0 +1,42 @@
+.web-rabbit-upgrade {
+  position: relative;
+  background: url(res('home-bg.jpg'));
+  background-size: 100% 100%;
+  padding-bottom: 70px;
+  min-height: 100vh;
+  &::before{
+    content: '';
+    display:table;
+  }
+  >p.desc {
+    width: 480px;
+    margin: 14px auto 0;
+    color: #7C6DB5;
+    font-size: 17px;
+    text-align: center;
+    line-height: 20px;
+  }
+  &-card {
+    width: 214px;
+    margin: 27px auto;
+    height: 319px;
+    background-color: palegoldenrod;
+  }
+  &-step {
+    width: 520px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7C6DB5;
+    font-size: 14px;
+  }
+  &-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+.web-upgrade-modal-btn{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,21 @@
+.m-back-button {
+  width: rem(123);
+  height: rem(36);
+  font-size: rem(13);
+  line-height: rem(36);
+  color: #f0e7e0;
+  outline: none;
+  border: none;
+  background: transparent;
+  position: fixed;
+  text-align: right;
+  padding-right: rem(23);
+  box-sizing: border-box;
+  top: rem(64);
+  left: 0;
+  z-index: 10;
+  background: url(res("btn/btn-back.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  text-shadow: 0px 0px rem(10) #8A51FF, 0px 0px rem(10) #8A51FF, 0px 0px rem(10) #8A51FF;
+}

@@ -1,0 +1,44 @@
+.m-coming-soon {
+  padding: 0 rem(20);
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url(res("comingSoon/bg.png")) no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  &-conent {
+    width: rem(315);
+    height: rem(286);
+    background: url(res("comingSoon/icon.png")) no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    margin: auto;
+    margin-top: rem(150);
+    overflow: hidden;
+    p {
+      font-size: rem(16);
+      line-height: rem(18);
+      font-family: "tt";
+      text-align: center;
+      color: #7a6bc0;
+      margin-top: rem(110);
+      opacity: 0;
+    }
+    &-time {
+      font-size: rem(16);
+      display: flex;
+      font-family: "tt";
+      margin-top: rem(8);
+      margin-top: rem(0);
+
+      line-height: rem(38);
+      // padding: 0 rem(40);
+      box-sizing: border-box;
+      span {
+        flex: 1;
+        text-align: center;display: block;
+        @include wzjb(#F2F0F5, #5F77FF);
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.web-c-card-shipcard {
+  width: 218px;
+  height: 208px;
+  background: center/contain no-repeat;
+  position: relative;
+  &-seat {
+    &-2 {
+      background-image: url($res + "cards/ship-2.png");
+    }
+    &-4 {
+      background-image: url($res + "cards/ship-4.png");
+    }
+    &-6 {
+      background-image: url($res + "cards/ship-6.png");
+    }
+    &-8 {
+      background-image: url($res + "cards/ship-8.png");
+    }
+  }
+  h4 {
+    text-align: center;
+    @include jb(#fdfdff, #537dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+.web-c-card-shipcard-box-rear {
+  width: 218px;
+  height: 208px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url($res + "cards/card-border.png") center/contain no-repeat;
+  box-sizing: border-box;
+  padding: 0 20px;
+  i {
+    color: #6b60ae;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    &:before {
+      content: "";
+      display: block;
+      width: 35px;
+      height: 35px;
+      background: url($res + "common/icon-send.png") center/100% 100% no-repeat;
+      margin: auto;
+      margin-bottom: 5px;
+    }
+  }
+  em {
+    color: #6b60ae;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    &:before {
+      content: "";
+      display: block;
+      width: 35px;
+      height: 35px;
+      background: url($res + "common/icon-sell.png") center/100% 100% no-repeat;
+      margin: auto;
+      margin-bottom: 5px;
+    }
+  }
+}
+.web-send-card-box .web-c-card-shipcard-box {
+  margin-top: rem(50);
+
+}
+.web-send-card-box .web-c-card-shipcard-box .web-c-card-shipcard {
+ width: 100%;
+}

@@ -1,0 +1,65 @@
+.web-rabbit-home {
+  width: 970px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  &-white-paper {
+    position: absolute;right: 16px;top: 16px;height: 38px;
+    background: #242430;border-radius: 4px;
+    display: flex;justify-content: center;align-items: center;
+    &:before {
+      content: '';display: block;width: 36px;height: 38px;margin-right: -8px;
+      background: url($res + 'common/icon-white-paper.png') center/contain no-repeat;
+    }
+    a {
+      color: #BEC5F3;font-size: 16px;padding: 0 8px;position: relative;top: 2px;
+    }
+  }
+  &-no-data {
+    overflow: hidden;
+    > img {
+      display: block;
+      width: 312px;
+      height: 295px;
+      margin: 92px auto 0;
+    }
+    span {
+      font-weight: bold;
+      font-size: 23px;
+      line-height: 23px;
+      background-image: -webkit-linear-gradient(bottom, #3256cd, #72f9fc);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: block;
+      margin: 53px auto 92px;
+      text-align: center;
+    }
+  }
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+
+    .web-c-card-bunnycard,
+    .web-c-card-babycard {
+      width: 194px;
+      height: 289px;
+      background-color: pink;
+      margin-bottom: 62px;
+      margin-right: 62px;
+      &:nth-child(4n) { 
+        margin-right: 0; 
+      }
+      &:nth-last-child(-n + 4) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .web-button {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 41px;
+    z-index: 10;
+  }
+}

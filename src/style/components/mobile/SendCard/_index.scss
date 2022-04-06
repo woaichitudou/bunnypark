@@ -1,0 +1,30 @@
+.m-send-card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+.m-send-card-box {
+  width: 182px;
+  height: 264px;
+  background-color: palegoldenrod;
+  margin-top: 10px;
+}
+.m-send-card-input {
+  outline: none;
+  width: 307px;
+  height: 51px;
+  border: none;
+  background: transparent;
+  background: url(res("fleet/input-bg.png")) no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  margin-top: 46px;
+  box-sizing: border-box;
+  padding: 0 30px;
+  color: #7c6db5;
+  font-size: 15px;
+}
+.m-send-card-input::-webkit-input-placeholder {
+  color: #7c6db5;
+}
